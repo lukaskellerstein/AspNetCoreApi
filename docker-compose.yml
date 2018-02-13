@@ -1,0 +1,20 @@
+version: '2'
+
+services:
+  testapi:
+    image: testapi
+    build:
+      context: ./TestApi
+      dockerfile: Dockerfile
+    links:
+      - testdb
+    ports:
+      - "8885:8885"
+
+  testdb:
+    image: testdb
+    build: 
+      context: ./Db
+      dockerfile: Dockerfile
+    ports:
+      - "27017:27017"

@@ -1,0 +1,32 @@
+{
+	"info": {
+		"name": "TestApi",
+		"_postman_id": "77195633-8a3a-0c96-8b64-89ad2309c7a8",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/catalog/getallproducts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8885/catalog/getallproducts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8885",
+					"path": [
+						"catalog",
+						"getallproducts"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
